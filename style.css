@@ -1,0 +1,59 @@
+section{
+    background-image: url(./სკოლა.jpg);
+    background-repeat: round;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-wrapper{
+    background-color: rgba(186, 154, 189, 0.37);
+    backdrop-filter: blur 5px;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    box-shadow: 5px 10px 30px rgba(71, 4, 60, 0.507);
+    transition: 1.5s ease-in-out;
+    animation: glowing 1.2s limear infinite
+
+@keyframes glowing {
+    0%{
+        box-shadow:
+        3px 2px 15px rgb(126, 94, 118),
+        10px 1px 20px rgb(17, 16, 17),
+        0 2px 30px rgb(212, 51, 23),
+        3px 0 40px rgb(165, 33, 165);
+
+    }
+    
+    20%{
+        box-shadow:
+        3px 2px 15px rgb(126, 116, 94),
+        0 2px 30px rgb(179, 60, 13),
+        10px 1px 20px rgb(135, 94, 200),
+        3px 0 40px rgb(126, 94, 250);
+    }
+    
+    50%{
+        box-shadow:
+        3px 2px 15px rgb(125, 126, 94),
+        3px 0 40px rgb(126, 94, 250),
+        10px 1px 20px rgb(126, 200, 94),
+        0 2px 30px rgb(119, 94, 126);
+    }
+    75%{
+        box-shadow:
+        3px 2px 15px rgb(94, 99, 126),
+        3px 0 40px rgb(126, 94, 250),
+        10px 1px 20px rgb(94, 122, 200),
+        0 2px 30px rgb(39, 141, 90); 
+    }
+    100%{
+        box-shadow:
+        3px 2px 15px rgb(126, 107, 94),
+        3px 0 40px rgb(94, 250, 224),
+        10px 1px 20px rgb(200, 184, 94),
+        0 2px 30px rgb(126, 94, 124);
+    }
+}
